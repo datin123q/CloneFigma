@@ -8,27 +8,67 @@
 </head>
 <body>
 
+
   <!-- Header -->
   <header>
-    <div class="logo">MyBrand</div>
+    <img src="assets/logo.png" alt="Logo" class="logo">
     <nav>
       <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="#">Service</a>
+      <a href="#">Feature</a>
+      <a href="#">Product</a>
+      <a href="#">Testimonial</a>
+      <a href="#">FAQ</a>
     </nav>
+    <div class="buttons">
+    <a href="#" class="login">Login</a>
+    <a href="#" class="signup">Sign up</a>
+    </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <h1>Chào mừng đến với Landing Page</h1>
-    <p>Thiết kế từ Figma sang web tĩnh</p>
-    <button>Bắt đầu ngay</button>
+    <div class="hero-text">
+      <h1>Lesson and insights
+        <span class="highlight">from 8 years</span>
+      </h1>
+      <p>Where to grow your business as a photographer: site or social media?</p>
+      <button>Register</button>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hero.png" alt="Hero Image">
+    </div>
   </section>
+
+  <!-- Features -->
+  <!-- <section class="features">
+    <div class="feature">
+      <img src="assets/icon1.png" alt="Feature 1">
+      <h3>Tốc độ</h3>
+      <p>Triển khai website nhanh chóng trong vài ngày.</p>
+    </div>
+    <div class="feature">
+      <img src="assets/icon2.png" alt="Feature 2">
+      <h3>Chuẩn SEO</h3>
+      <p>Tối ưu công cụ tìm kiếm để dễ dàng tiếp cận khách hàng.</p>
+    </div>
+    <div class="feature">
+      <img src="assets/icon3.png" alt="Feature 3">
+      <h3>Responsive</h3>
+      <p>Hiển thị đẹp trên mọi thiết bị từ mobile đến desktop.</p>
+    </div>
+  </section> -->
 
   <!-- Footer -->
   <footer>
     <p>© 2025 MyBrand. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.querySelector('.close-btn').addEventListener('click', function() {
+      document.querySelector('.promo-bar').style.display = 'none';
+    });
+  </script>
 
 </body>
 </html>

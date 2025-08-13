@@ -6,35 +6,93 @@ body {
 /* Header */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  background: #0077cc;
-  color: white;
+  padding: 15px 10%;
+  background: #f5f5f5;
+  padding: 25px;
+}
+header .logo {
+  height: 30px;
 }
 header nav a {
-  color: white;
-  margin-left: 15px;
+  margin-left: 20px;
+  color: #333;
   text-decoration: none;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.login {
+  text-decoration: none;
+  color: #4CAF50; /* xanh lá chữ */
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+
+.signup {
+  text-decoration: none;
+  background-color: #4CAF50; /* xanh lá nền */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: sans-serif;
 }
 
 /* Hero */
 .hero {
-  text-align: center;
-  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10%;
   background: #f5f5f5;
 }
-.hero h1 {
-  font-size: 2.5em;
+.hero-text {
+  max-width: 50%;
 }
-.hero button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background: #0077cc;
+.hero-text h1 {
+  font-size: 60px;
+  color: #4d4d4d;
+}
+.highlight{
+    color: #4CAF50;
+}
+.hero-text p{
+    margin-top: -30px;
+    color: #8a8a8a;
+}
+.hero-text button {
+  padding: 15px 30px;
+  background: #4CAF50;
   color: white;
+  border-radius: 4px;
   border: none;
   cursor: pointer;
+  margin-top: 10px;
 }
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Features
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 10%;
+}
+.feature {
+  text-align: center;
+  max-width: 250px;
+}
+.feature img {
+  height: 50px;
+} */
 
 /* Footer */
 footer {
@@ -45,11 +103,16 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
-  header {
+@media (max-width: 768px) {
+  .hero {
     flex-direction: column;
+    text-align: center;
   }
-  header nav {
-    margin-top: 10px;
+  .hero-text {
+    max-width: 100%;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
   }
 }
