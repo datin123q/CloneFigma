@@ -453,6 +453,14 @@ footer {
   .feature-text, .feature2-text {
     max-width: 100%;
   }
+  .feature4,.feature4-contents,.feature4-content{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .feature4-text {
+    width: 100%;            
+  }
 
   .feature7 h1 {
     font-size: 40px;
