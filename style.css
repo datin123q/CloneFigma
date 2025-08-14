@@ -1,35 +1,45 @@
+*{
+    box-sizing: border-box;
+}
 body {
   margin: 0;
+  width: 100%;
   font-family: Arial, sans-serif;
-  background: black;
 }
-.main{
-    width: auto;
-    min-height: 100vh;
-    max-width: 100%;
-    margin: 10px 50px 0px 50px;
-    background-color: #f5f5f5;
+.main {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background: white;
+  overflow-x: hidden; 
 }
+section{
+  width: 100%;
+}
+
 
 /* Header */
 header {
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 15px 10%;
   background: #f5f5f5;
-  padding:20px 15px;
+  padding:30px 15px;
 }
 header .logo {
-  height: 25px;
+  height: 24px;
 }
 header nav a {
   margin-left: 45px;
   color: #333;
   text-decoration: none;
+  font-size: 16px;
 }
 .buttons {
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   align-items: center;
 }
@@ -40,6 +50,7 @@ header nav a {
   padding: 10px 20px;
   border-radius: 4px;
   font-family: sans-serif;
+  font-size: 14px;
 }
 
 .signup {
@@ -49,23 +60,28 @@ header nav a {
   padding: 10px 20px;
   border-radius: 4px;
   font-family: sans-serif;
+  font-size: 14px;
 }
 
 /* Hero */
+.feature1{
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: #f5f5f5;
+}
 .hero {
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 10%;
-  background: #f5f5f5;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  padding: 96px 144px;
 }
 .hero-text {
   max-width: 60%;
 }
 .hero-text h1 {
-  font-size: 65px;
+  font-size: 64px;
   color: #4d4d4d;
 }
 .highlight{
@@ -73,16 +89,16 @@ header nav a {
 }
 .hero-text p{
     margin-top: -30px;
-    color: #8a8a8a;
+    color: #717171;
 }
 .hero-text button {
-  padding: 18px 36px;
+  padding: 14px 32px;
   background: #4CAF50;
   color: white;
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .hero-image img {
   max-width: 400px;
@@ -90,38 +106,44 @@ header nav a {
 }
 /* feature */
 .features {
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  padding: 40px 10%;
+  padding: 40px 10% 40px 10%;
   background: white;
 }
 .feature-text{
   text-align: center;
+  max-width: 50%;
+  align-self: center;
 }
 .feature-text h1{
-  font-size: 35px;
+  font-size: 36px;
   color: #4d4d4d;
 }
 .feature-text p{
   margin-top: -20px;
   color: #8a8a8a;
+  font-size: 16px;
 }
 .feature {
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
 }
 .feature img {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 .feature-content{
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  max-width: 24%;
+  max-width: 37%;
   text-align: center;
 }
 .feature-content h1{
@@ -132,35 +154,77 @@ header nav a {
   margin-top: -20px;
   color: #8a8a8a;
 }
+/*feature2*/
+.feature2 {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 10% 0px 10%;
+  background: white;
+}
+.feature2-text{
+  text-align: center;
+  max-width: 47%;
+  align-self: center;
+}
+.feature2-text h1{
+  font-size: 36px;
+  color: #4d4d4d;
+}
+.feature2-text p{
+  margin-top: -20px;
+  color: #8a8a8a;
+  font-size: 16px;
+}
+.feature2-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.feature2-contents img {
+  height: 56px;
+  width: 65px;
+}
+.feature2-content{
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 32px;
+  max-width: 290px;
+}
+.feature2-content h1{
+  font-size: 33px;
+  color: #4d4d4d;
+}
+.feature2-content p{
+  margin-top: -20px;
+  color: #8a8a8a;
+}
 /*feature3*/
 .feature3 {
-    display: flex;
+      display: flex;
+  flex-wrap: wrap;
     align-items: center; 
+    justify-content: center;
     gap: 40px; 
-    padding: 40px 0;
+    padding: 0px 10%;
     background: white;
 }
 
-.feature3-img {
-    flex: 0 0 40%; 
-    display: flex;
-    justify-content: center; 
-}
-
 .feature3-img img {
-    width: 100%; 
-    max-width: 450px;
-    height: auto;
-    display: block;
-    margin-left: 140px;
+    width: 450px; 
+}
+.feature3-text{
+  max-width: 600px;
 }
 
-.feature3-text {
-    flex: 0 0 60%;
-    max-width: 42%;
-}
 .feature3-text h1{
-  font-size: 35px;
+  font-size: 36px;
   color: #4d4d4d;
 }
 .feature3-text p{
@@ -179,31 +243,47 @@ header nav a {
 }
 /*feature4*/
 .feature4{
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  background: #f5f7fa;
+  padding: 64px 10%;
+  margin: 48px 0;
 }
 .feature4-text{
   width: 50%;
-  margin-left: 140px;
+}
+.feature4-text h1{
+  font-size: 36px;
+  color: #4d4d4d;
+  max-width: 410px ;
+}
+.feature4-text p{
+  margin-top: -20px;
+  color: black;
+  font-size: 16px;
 }
 .feature4-contents{
   width: 50%;
 }
-.feature4 h1{
-  font-size: 35px;
+.feature4-contents h1{
+  font-size: 28px;
   color: #4d4d4d;
-  max-width: 63%;
+
 }
-.feature4 p{
+.feature4-contents p{
   margin-top: -20px;
-  color: black;
+  color: grey;
+  font-size: 16px;
 }
 .feature4-contents{
-  display: flex;
+    display: flex;
   flex-wrap: wrap;
+  gap: 40px;
 }
 .feature4-content{
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
   align-items: center;
   min-width: 40%;
 }
@@ -211,51 +291,107 @@ header nav a {
   height: 50px;
   margin-right: 20px;
 }
+/*feature 6*/
+.feature6{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px 10%;
+  gap: 78px;
+}
+.feature6-img{
+width: 330px;
 
+}
+.feature6-text{
+  max-width: 750px;
+}
+.feature6-text h2{
+  color: #4CAF50;
+  font-size: 20px ;
+}
+.feature6-text p{
+  color: grey;
+}
+.feature6-logo{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.feature6-logo img{
+  height: 48px;
+}
+
+/*feature 7*/
+.feature7{
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: #F5F7FA;
+  justify-content: center;
+  padding: 32px 0px;
+}
+.feature7 h1{
+  font-size: 64px ;
+  max-width: 900px;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.feature7 button{
+  padding: 14px 32px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+}
 /* Footer */
 footer {
   text-align: center;
   padding: 15px;
   background: #263238;
   color: white;
-  display: flex;
-}
-.foo1{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 40% ;
-  margin-top: 10px;
-  margin-left: 120px;
-}
-.foo-logo{
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
+.foo1{
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
 .foo-logo img{
   height: 30px;
 }
 .foo2{
-  display: flex;
-  width: 60%;
-  margin-top: 20px;
+    display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
 }
 .foo2 h1{
   font-size: 20px
 }
+
 .foo2-item{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  width: 25%;
 }
 .foo2-item a{
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   color: white;
   text-decoration: none;
 }
 .email-input {
-  display: flex;
+    display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background: #37474f; /* màu nền xám đậm */
   padding: 10px 15px;
@@ -277,6 +413,50 @@ footer {
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 1270px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;   
+    padding: 60px 20px;
+  }
+
+  .hero-text, .hero-image {
+    width: 100%;            
+  }
+
+  .feature2-contents {
+    justify-content: center;
+    gap: 20px; 
+  }
+
+}
+
+@media (max-width: 980px) {
+  header nav {
+    display: none;
+  }
+  header {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .feature-text, .feature2-text {
+    max-width: 100%;
+  }
+
+  .feature7 h1 {
+    font-size: 40px;
+    padding: 0 10px;
+  }
+}
+
 
 
 
