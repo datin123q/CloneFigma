@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    line-height: 140%;
 }
 body {
   margin: 0;
@@ -17,10 +18,9 @@ section{
   width: 100%;
 }
 
-
 /* Header */
 header {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -28,9 +28,7 @@ header {
   background: #f5f5f5;
   padding:30px 15px;
 }
-header .logo {
-  height: 24px;
-}
+
 header nav a {
   margin-left: 45px;
   color: #333;
@@ -38,8 +36,7 @@ header nav a {
   font-size: 16px;
 }
 .buttons {
-    display: flex;
-  flex-wrap: wrap;
+  display: flex;
   gap: 15px;
   align-items: center;
 }
@@ -71,11 +68,10 @@ header nav a {
   background: #f5f5f5;
 }
 .hero {
-    display: flex;
-  flex-wrap: wrap;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 96px 144px;
+  padding: 96px 10%;
 }
 .hero-text {
   max-width: 60%;
@@ -156,7 +152,7 @@ header nav a {
 }
 /*feature2*/
 .feature2 {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
@@ -277,7 +273,7 @@ header nav a {
   font-size: 16px;
 }
 .feature4-contents{
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -288,20 +284,15 @@ header nav a {
   min-width: 40%;
 }
 .feature4-content img{
-  height: 50px;
-  margin-right: 20px;
+  width: 50px;
 }
 /*feature 6*/
 .feature6{
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 32px 10%;
   gap: 78px;
-}
-.feature6-img{
-width: 330px;
-
 }
 .feature6-text{
   max-width: 750px;
@@ -354,12 +345,11 @@ footer {
   background: #263238;
   color: white;
     display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 .foo1{
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
@@ -370,9 +360,9 @@ footer {
   height: 30px;
 }
 .foo2{
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
-  gap: 90px;
+  gap: 50px;
 }
 .foo2 h1{
   font-size: 20px
@@ -380,7 +370,6 @@ footer {
 
 .foo2-item{
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -390,11 +379,11 @@ footer {
   text-decoration: none;
 }
 .email-input {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   background: #37474f; /* màu nền xám đậm */
-  padding: 10px 15px;
+  padding: 10px 0px;
   border-radius: 10px;
 }
 .email-input input {
@@ -414,60 +403,109 @@ footer {
   cursor: pointer;
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1279px) {
   .hero {
     flex-direction: column;
     text-align: center;   
-    padding: 60px 20px;
+    gap:20px;
+    padding: 8px 10% ;
   }
 
   .hero-text, .hero-image {
     width: 100%;            
   }
-
+  .hero-text h1{
+    max-width: 100%;
+    font-size: 64px;
+  }
   .feature2-contents {
     justify-content: center;
     gap: 20px; 
   }
-
+  .feature6{
+    gap: 10px;
+  }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1023px) {
   header nav {
     display: none;
   }
   header {
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
   .foo2{
     justify-content: center;
   }
 }
 
-@media (max-width: 768px) {
-  section {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+@media (max-width: 767px) {
+  header img{
+    width: 100px;
   }
-
+  header .login, header .signup{
+    padding: 7px 14px;
+  }
+  .hero{
+    padding: 0;
+  }
+  .hero-text h1,.feature-text h1, .feature2-text h1, .feature3-text h1, .feature2-content h1, .feature4-text p,.feature7 h1{
+    font-size: 28px;
+  }
+  .hero-text p, .feature-text p, .feature2-text p, .feature3-text p, .feature2-content p, .feature4-text p, .feature6-text p{
+    font-size: 12px ;
+    margin: 0;
+  }
+  .hero-text button, .feature3-text button {
+    padding: 8px 16px;
+  }
   .feature-text, .feature2-text {
     max-width: 100%;
+  }
+  .feature img, .feature6-logo img{
+    width: 30px;
+  }
+  .feature2{
+    padding: 0;
+  }
+  .feature4-content{
+    text-align: center;
+  }
+  .feature4-contents h1{
+    margin-top: 0px;
+  }
+  .feature4-text{
+    text-align: center;
+    width: 100%;
+  }
+  .feature4-text p{
+    margin-top: -30px;
   }
   .feature4,.feature4-contents,.feature4-content{
     flex-direction: column;
     justify-content: center;
   }
-
-  .feature4-text {
-    width: 100%;            
+  footer{
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
-
-  .feature7 h1 {
-    font-size: 40px;
-    padding: 0 10px;
+  .foo2{
+    justify-content: flex-start;
+    gap: 90px;
+    row-gap: 10px;
+  }
+  .foo2-item a, .foo1 p, .email-input input{
+    font-size: 12px;
+  }
+  .email-input{
+    padding: 10px 0px;
+    justify-content: flex-end;
   }
 }
 
 
 
-
+/* mobile 767
+tablet 1023
+destop 1279*/
